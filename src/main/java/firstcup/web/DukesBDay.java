@@ -56,15 +56,7 @@ public class DukesBDay implements Serializable {
      * @return the value of age
      */
     public int getAge() {
-        try {
-            Client client = ClientBuilder.newClient();
-            WebTarget target = client.target("http://localhost:8080/dukes-age/webapi/dukesAge");
-            String response = target.request().get(String.class);
-            age = Integer.parseInt(response);
-        } catch (IllegalArgumentException | NullPointerException | WebApplicationException ex) {
-            logger.severe("processing of HTTP response failed");
-        } 
-        return age;
+       return 10;
     }
 
     /**
