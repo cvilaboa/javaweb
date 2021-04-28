@@ -56,7 +56,7 @@ public class DukesBDay implements Serializable {
      * @return the value of age
      */
     public int getAge() {
-       return 10;
+       return 25;
     }
 
     /**
